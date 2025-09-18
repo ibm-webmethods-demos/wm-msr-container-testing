@@ -1,0 +1,16 @@
+build/
+target/
+replicate/
+workspace/
+*.bak
+
+# ---> macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Compiled class file
+*.class
+
+# Log file
+*.log

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+    <record name="listeners" javaclass="com.wm.util.Values">
+        <record name="HTTPListener@2537" javaclass="com.wm.util.Values">
+            <number name="port" type="Integer">2537</number>
+            <value name="protocol">HTTP</value>
+            <value name="pkg">Testing</value>
+            <value name="enabled">true</value>
+            <value name="key">HTTPListener@2537</value>
+            <value name="uniqueID">f410e62ffc194b2592d6c41b77b4454e</value>
+            <value name="portAlias">ContainerCloudTraffic</value>
+            <value name="portDescription">Dedicated for port container cloud traffic</value>
+            <value name="factoryKey">webMethods/HTTP</value>
+            <value name="configURL">/WmRoot/configHTTP.dsp</value>
+            <value name="provider">webMethods</value>
+            <value name="listenerType">Regular</value>
+            <value name="clientAuth">none</value>
+            <null name="idProvider"/>
+            <value name="ssl">false</value>
+            <value name="threadPool">true</value>
+            <value name="minThread">10</value>
+            <value name="maxThread">1000</value>
+            <value name="threadPriority">5</value>
+            <value name="maxQueue">65000</value>
+            <value name="keepAliveTimeout">60000</value>
+            <value name="internalPort">-1</value>
+            <value name="curDelay">0</value>
+            <value name="stepsize">10000</value>
+            <value name="suspended">false</value>
+            <value name="alias">b2b</value>
+            <null name="jsseDisabledProtocols" />
+            <null name="jsseEnabledProtocols" />
+        </record>
+    </record>
+    <record name="access" javaclass="com.wm.util.Values">
+        <record name="HTTPListener@2537" javaclass="com.wm.util.Values">
+            <null name="home" />
+            <value name="default">exclude</value>
+            <record name="nodes" javaclass="com.wm.util.StringSet">
+                <list name="elements">
+                    <!-- support services -->
+                    <value>pub.flow:debugLog</value>
+                </list>
+            </record>
+            <value name="key">HTTPListener@2537</value>
+        </record>
+    </record>
+</Values>

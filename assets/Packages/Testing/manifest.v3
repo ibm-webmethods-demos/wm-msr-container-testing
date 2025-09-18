@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="enabled">yes</value>
+  <value name="system_package">no</value>
+  <value name="version">1.0</value>
+  <null name="startup_services"/>
+  <null name="shutdown_services"/>
+  <null name="replication_services"/>
+  <null name="requires"/>
+  <null name="listACL"/>
+  <value name="webappLoad">yes</value>
+  <value name="reloadWithDependentPackage">yes</value>
+  <null name="build"/>
+  <null name="description"/>
+  <value name="created_date">17-09-2025 18:35:28 EDT</value>
+  <null name="extendedProperties"/>
+  <value name="target_server_version">11.1.0.0</value>
+</Values>

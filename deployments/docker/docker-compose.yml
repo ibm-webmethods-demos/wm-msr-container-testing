@@ -1,0 +1,19 @@
+---
+networks:
+  samplenet:
+
+services:
+  msr:
+    image: ${REG}wmtesting-msr-package:${TAG}
+    ports:
+      - "5556:5555"
+    environment: 
+      JAVA_MIN_MEM: 512m
+      JAVA_MAX_MEM: 512m
+      SAG_IS_ADMIN_PASSWORD: SomePassword123!
+      SAG_IS_CONFIG_PROPERTIES: /opt/softwareag/IntegrationServer/app/application.properties
+    volumes:
+      - ./application.properties:/opt/softwareag/IntegrationServer/app/application.properties:rw
+      - ./work:/opt/softwareag/IntegrationServer/Packages
+    networks:
+      - samplenet

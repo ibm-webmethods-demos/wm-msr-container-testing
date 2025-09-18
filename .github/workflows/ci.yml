@@ -44,8 +44,8 @@ jobs:
         uses: docker/login-action@v3.5.0
         with:
           registry: ibmwebmethods.azurecr.io
-          username: ${{ secrets.ibmwebmethodscr-username }}
-          password: ${{ secrets.ibmwebmethodscr-password }}
+          username: ${{ secrets.ibmwebmethodscr_username }}
+          password: ${{ secrets.ibmwebmethodscr_password }}
       
       - name: Login to target registry ${{ env.REGISTRY }}
         if: github.event_name != 'pull_request'

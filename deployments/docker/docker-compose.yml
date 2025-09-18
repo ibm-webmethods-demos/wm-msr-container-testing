@@ -4,7 +4,8 @@ networks:
 
 services:
   msr:
-    image: ${REG}wmtesting-msr-package:${TAG}
+    image: ${REG}wm-msr-container-testing:${TAG}
+    platform: linux/amd64
     ports:
       - "5556:5555"
     environment: 

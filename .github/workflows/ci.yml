@@ -15,7 +15,7 @@ env:
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
   IMAGE_NAME: ${{ github.repository }}
-
+  BASE_MSR_VERSION: 11.1.0.5
 
 jobs:
   build:
@@ -74,6 +74,8 @@ jobs:
         with:
           context: .
           file: Dockerfile
+          build-args: |
+            MSR_VERSION=${{ env.BASE_MSR_VERSION }}
           # ,linux/arm64
           platforms: linux/amd64
           push: true

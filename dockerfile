@@ -1,4 +1,6 @@
-FROM ibmwebmethods.azurecr.io/webmethods-microservicesruntime:11.1.0.5
+ARG MSR_VERSION=11.1.0.5
+
+FROM ibmwebmethods.azurecr.io/webmethods-microservicesruntime:${MSR_VERSION}
 
 USER sagadmin:root
 
